@@ -7,3 +7,5 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("No worries! Maybe another time 😊");
     });
 });
+
+const name = "Riya";

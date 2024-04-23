@@ -80,20 +80,36 @@ p {
 
 /* For mobile devices */
 @media only screen and (max-width: 480px) {
+    body {
+        justify-content: flex-start; /* Align content to the top */
+    }
+
     .container {
-        padding: 10px;
+        width: calc(100% - 20px); /* Adjust width to fit smaller screens and leave space on both sides */
+        border-radius: 15px; /* Retain rounded corners */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Retain box shadow */
+        padding: 20px; /* Adjust padding */
+        margin: 0 auto; /* Center the container horizontally */
     }
+
     h1 {
-        font-size: 20px;
+        font-size: 24px; /* Decrease font size for headings */
+        margin-bottom: 15px; /* Adjust margin */
     }
+
     p {
-        font-size: 14px;
+        font-size: 16px; /* Decrease font size for paragraphs */
+        margin-bottom: 15px; /* Adjust margin */
     }
-    .logo {
-        width: 80px;
+
+    .buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
     }
+
     .buttons button {
-        padding: 8px 15px;
-        font-size: 14px;
+        margin: 10px 0; /* Adjust margin between buttons */
+        width: 100%; /* Make buttons full width */
     }
 }
