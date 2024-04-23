@@ -1,0 +1,99 @@
+/* Default styles */
+body {
+    font-family: 'CuteFont', 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #FFEFF8;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+    /* opacity: 0;  */
+    animation: fade-in-soft 1.5s forwards;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #EE75B0;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #6B6B6B;
+}
+
+.buttons {
+    margin-top: 20px;
+    opacity: 1;
+    animation: slide-up 1s forwards 0.5s;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yesBtn { background-color: #87ED91; }
+#noBtn {  background-color: #FFC6D9; }
+
+#yesBtn:hover { background-color: #68D572; } 
+#noBtn:hover  { background-color: #FF9BC1; } 
+
+/* Media queries for responsiveness */
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .buttons button {
+        padding: 10px 20px;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .buttons button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
